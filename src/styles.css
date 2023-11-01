@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    font-family: 'Dancing Script';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../dist/img/street-6099209_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgba(200, 200, 200, 0.8); */
+}
+
+.header {
+    width: 100%;
+    min-height: 200px;
+    height: 25vh;
+    background-color: rgba(58, 58, 58, 0.9);
+}
+
+.headerContent {
+    height: 20vh;
+    width: inherit;
+    padding: 20px;
+}
+
+.logo {
+    height: 18vh;
+    background-image: url(../dist/img/Logo_850_125.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    color: #fff;
+}
+
+.home,
+.menu,
+.contact {
+    padding: 0 10px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.home:hover,
+.menu:hover,
+.contact:hover {
+    cursor: pointer;
+}
+
+
+.active {
+    border-bottom:3px solid rgb(255, 106, 0);
+}
+
+.main {
+    width: 100%-4px;
+    min-height: 400px;
+    height: 60vh;
+    border: 2px solid rgba(100, 100, 100, 0.8);
+}
+
+.footer {
+    width: 100%-4px;
+    min-height: 100px;
+    height: 12vh;
+    background-color: rgba(58, 58, 58, 0.9);
+}
