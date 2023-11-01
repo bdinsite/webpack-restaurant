@@ -22,22 +22,22 @@ body {
 
 .header {
     width: 100%;
-    min-height: 200px;
-    height: 25vh;
+    min-height: 150px;
+    height: 20vh;
     background-color: rgba(58, 58, 58, 0.9);
 }
 
 .headerContent {
-    height: 20vh;
+    height: 15vh;
     width: inherit;
     padding: 20px;
 }
 
 .logo {
-    height: 18vh;
+    height: 15vh;
     background-image: url(../dist/img/Logo_850_125.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 35%;
 }
 
 .navButtons {
@@ -80,10 +80,10 @@ body {
 
 .menuContent {
     height: 100%;
-    background-color: rgba(231, 231, 231, 0.6);
+    background-color: rgba(231, 231, 231, 0.8);
     background-image: url(../dist/img/menu-3168414_1280.jpg);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 30%;
     background-position-x: center;
 }
 
@@ -98,20 +98,80 @@ body {
 }
 
 .contactForm {
-    font-size: 30px;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 70%;
+    height: 90%;
     max-width: 600px;
     justify-content: center;
     align-items: center;
     background: rgba(232, 232, 232, 0.8);
 }
 
+h3 {
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+.submitContactForm {
+    margin: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(255, 123, 0);
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px 2px gray;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 300px;
+}
+
 .footer {
-    width: 100%-4px;
+    display: flex;
+    /* align-content: center; */
+    
+    justify-content: space-between;
+    /* width: 100%-4px; */
     min-height: 100px;
-    height: 12vh;
+    height: 18vh;
     background-color: rgba(58, 58, 58, 0.9);
+}
+
+.footerContent {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: top;
+}
+
+
+.address h3 {
+    padding: 0;
+}
+
+.social,
+.copyright {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social img {
+    height: 50px;
+    width: 50px;
 }

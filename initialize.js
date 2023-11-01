@@ -100,8 +100,40 @@ function createMain() {
 function createFooter() {
     const footer = document.createElement('div');
     const footerContent = document.createElement('div');
-    
+    const address = document.createElement('div');
+    const h3Address = document.createElement('h3');
+    const h4Address = document.createElement('h4');
+    const p = document.createElement('p');
+    const copyright = document.createElement('div');
+    const h4Copyright = document.createElement('h4');
+    const social = document.createElement('div');
+    const h3Social = document.createElement('h3');
+    const imgSocial = document.createElement('img');
+
+    h3Address.textContent = 'Address:';
+    h4Address.textContent = 'Just around the 2nd corner, to the left';
+    p.textContent = 'Pass the bald guy and clap four times, then turn right.';
+
+    h4Copyright.textContent = 'Copyright ©';
+    h3Social.textContent = 'Follow Us:';
+
     footer.classList.add('footer');
+    footerContent.classList.add('footerContent');
+    address.classList.add('address');
+    copyright.classList.add('copyright');
+    social.classList.add('social');
+
+    imgSocial.src = '../dist/img/social-media-2083456_640.jpg';
+
+    address.appendChild(h3Address);
+    address.appendChild(h4Address);
+    address.appendChild(p);
+    copyright.appendChild(h4Copyright);
+    social.appendChild(h3Social);
+    social.appendChild(imgSocial);
+    footerContent.appendChild(address);
+    footerContent.appendChild(copyright);
+    footerContent.appendChild(social);
     footer.appendChild(footerContent);
     return footer;
 }
