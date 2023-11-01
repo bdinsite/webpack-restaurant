@@ -1,4 +1,6 @@
 import loadHomePage from "./src/home";
+import loadMenuPage from "./src/menu";
+import loadContactPage from "./src/contact";
 
 function createHeader() {
     const header = document.createElement('div');
@@ -32,6 +34,8 @@ function createNav() {
     contact.textContent = 'Contact Us';
 
     home.addEventListener('click', (evt) => {
+        const menuDiv = document.querySelector('.menuContent');
+        const contactDiv = document.querySelector('.contactContent');        
         if(evt.target.classList.contains('active')) {
             return;
         }
@@ -41,9 +45,13 @@ function createNav() {
             }
         })
         evt.target.classList.add('active');
+        if(menuDiv){menuDiv.remove()};
+        if(contactDiv){contactDiv.remove()};
         loadHomePage();
     })
     menu.addEventListener('click', (evt) => {
+        const homeDiv = document.querySelector('.homeContent');
+        const contactDiv = document.querySelector('.contactContent');
         if(evt.target.classList.contains('active')) {
             return;
         }
@@ -53,8 +61,13 @@ function createNav() {
             }
         })
         evt.target.classList.add('active');
+        if(homeDiv){homeDiv.remove()};
+        if(contactDiv){contactDiv.remove()};
+        loadMenuPage();
     })
     contact.addEventListener('click', (evt) => {
+        const homeDiv = document.querySelector('.homeContent');
+        const menuDiv = document.querySelector('.menuContent');
         if(evt.target.classList.contains('active')) {
             return;
         }
@@ -64,6 +77,9 @@ function createNav() {
             }
         })
         evt.target.classList.add('active');
+        if(homeDiv){homeDiv.remove()};
+        if(menuDiv){menuDiv.remove()};
+        loadContactPage();
     })
 
     navButtons.appendChild(home);
@@ -71,6 +87,13 @@ function createNav() {
     navButtons.appendChild(contact);
 
     return navButtons;
+}
+
+
+function createMain() {
+    const main = document.createElement('div');
+    main.id = 'main';
+    return main;
 }
 
 
@@ -84,14 +107,7 @@ function createFooter() {
 }
 
 
-function createMain() {
-    const main = document.createElement('div');
-    main.id = 'main';
-    return main;
-}
-
-
-export default function buildWebPage(main) {
+export default function buildWebPage() {
     const content = document.querySelector('#content');
     content.appendChild(createHeader());
     content.appendChild(createMain());

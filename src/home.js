@@ -8,9 +8,7 @@ function createHomePage() {
 
 export default function loadHomePage() {
     const main = document.querySelector('#main');
-    
     main.appendChild(createHomePage());
 
     return main;
-
 }

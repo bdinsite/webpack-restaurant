@@ -66,11 +66,47 @@ body {
     border-bottom:3px solid rgb(255, 106, 0);
 }
 
-.main {
+#main {
     width: 100%-4px;
     min-height: 400px;
     height: 60vh;
     border: 2px solid rgba(100, 100, 100, 0.8);
+}
+
+.homeContent {
+    height: 100%;
+    background-color: #fff;
+}
+
+.menuContent {
+    height: 100%;
+    background-color: rgba(231, 231, 231, 0.6);
+    background-image: url(../dist/img/menu-3168414_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(231, 231, 231, 0.6);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.contactForm {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 70%;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(232, 232, 232, 0.8);
 }
 
 .footer {
