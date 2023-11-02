@@ -3,7 +3,7 @@ function createHomePage() {
     mainContent.classList.add('homeContent');
     
     const homeImg = document.createElement('img');
-    homeImg.src = '../dist/img/dinner_table_922_1280.jpg';
+    homeImg.src = 'img/dinner_table_922_1280.jpg';
     homeImg.classList.add('homeImg');
 
     const textContent = document.createElement('div');

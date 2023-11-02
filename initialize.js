@@ -7,7 +7,7 @@ function createHeader() {
     const headerContent = document.createElement('div');
     const logoContainer = document.createElement('div');
     const logo = document.createElement('img');
-    logo.src = '../dist/img/Logo_850_125.png';
+    logo.src = 'img/Logo_850_125.png';
 
     header.classList.add('header');
     headerContent.classList.add('headerContent');
@@ -127,7 +127,7 @@ function createFooter() {
     copyright.classList.add('copyright');
     social.classList.add('social');
 
-    imgSocial.src = '../dist/img/social-media-2083456_640.jpg';
+    imgSocial.src = 'img/social-media-2083456_640.jpg';
 
     address.appendChild(h3Address);
     address.appendChild(h4Address);
