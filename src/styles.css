@@ -74,9 +74,27 @@ body {
 }
 
 .homeContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
     background-color: #fff;
 }
+
+.textContent {
+    max-width: 500px;
+}
+
+.homeContent h4 {
+    padding: 10px 30px;
+}
+
+.homeImg {
+    max-height: 90%;
+    border-radius: 15px;
+}
+
+
 
 .menuContent {
     height: 100%;
@@ -163,6 +181,10 @@ textarea {
 .copyright {
     display: flex;
     align-items: center;
+}
+
+.social img {
+    border-radius: 10px;
 }
 
 .address {
