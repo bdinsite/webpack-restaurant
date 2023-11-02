@@ -17,7 +17,6 @@ body {
     height: 100%;
     width: 100%;
     padding: 10px;
-    /* background-color: rgba(200, 200, 200, 0.8); */
 }
 
 .header {
@@ -28,21 +27,19 @@ body {
 }
 
 .headerContent {
-    height: 15vh;
-    width: inherit;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 20px 0 20px;
 }
 
 .logo {
-    height: 15vh;
-    background-image: url(../dist/img/Logo_850_125.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
+    width: 50vw;
 }
 
 .navButtons {
     display: flex;
-    justify-content: end;
+    align-items: end;
     gap: 20px;
     color: #fff;
 }
@@ -91,7 +88,7 @@ body {
 }
 
 .homeImg {
-    max-height: 90%;
+    max-width: 300px;
     width: 30vw;
     min-width: 200px;
     border-radius: 15px;
@@ -207,36 +204,18 @@ textarea {
 }
 
 /* MEDIA QUERY */
-.logo {
-    @media (max-width: 900px){
-        background-size: 40%;
+
+.headerContent {
+    @media (max-width: 750px){
+        flex-direction: column;
     }   
 }
 
 .logo {
-    @media (max-width: 800px){
-        background-size: 45%;
+    @media (max-width: 750px){
+        width: 375px;
     }   
 }
-
-.logo {
-    @media (max-width: 700px){
-        background-size: 50%;
-    }   
-}
-
-.logo {
-    @media (max-width: 600px){
-        background-size: 55%;
-    }   
-}
-
-.logo {
-    @media (max-width: 500px){
-        background-size: 60%;
-    }   
-}
-
 
 .address {
     @media (max-width: 600px){

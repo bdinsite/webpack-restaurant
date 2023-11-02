@@ -5,13 +5,17 @@ import loadContactPage from "./src/contact";
 function createHeader() {
     const header = document.createElement('div');
     const headerContent = document.createElement('div');
-    const logo = document.createElement('div');
+    const logoContainer = document.createElement('div');
+    const logo = document.createElement('img');
+    logo.src = '../dist/img/Logo_850_125.png';
 
     header.classList.add('header');
     headerContent.classList.add('headerContent');
+    logoContainer.classList.add('logoContainer');
     logo.classList.add('logo');
 
-    headerContent.appendChild(logo);
+    logoContainer.appendChild(logo);
+    headerContent.appendChild(logoContainer);
     headerContent.appendChild(createNav());
     header.appendChild(headerContent);
 
