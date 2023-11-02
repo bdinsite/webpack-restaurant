@@ -25,7 +25,7 @@ function createNav() {
     const contact = document.createElement('div');
 
     navButtons.classList.add('navButtons');
-    home.classList.add('home', 'active');
+    home.classList.add('home');
     menu.classList.add('menu');
     contact.classList.add('contact');
 

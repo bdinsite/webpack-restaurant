@@ -75,7 +75,7 @@ body {
 
 .homeContent {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
     background-color: #fff;
@@ -85,24 +85,31 @@ body {
     max-width: 500px;
 }
 
+.homeContent h3,
 .homeContent h4 {
     padding: 10px 30px;
 }
 
 .homeImg {
     max-height: 90%;
+    width: 30vw;
+    min-width: 200px;
     border-radius: 15px;
+    margin: 30px;
 }
 
 
 
 .menuContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     background-color: rgba(231, 231, 231, 0.8);
-    background-image: url(../dist/img/menu-3168414_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position-x: center;
+}
+
+.menuImg {
+    max-height: 100%;
 }
 
 .contactContent {
@@ -199,7 +206,7 @@ textarea {
     width: 50px;
 }
 
-
+/* MEDIA QUERY */
 .logo {
     @media (max-width: 900px){
         background-size: 40%;
@@ -240,5 +247,32 @@ textarea {
 .address {
     @media (max-width: 550px){
         max-width: 125px;
+    }
+}
+
+.homeContent h3,
+.homeContent h4 {
+    @media (max-width: 600px){
+        padding: 0;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+}
+
+.homeContent h3 {
+    @media (max-width: 600px){
+        font-size: 20px;
+    }
+}
+
+.homeContent h4 {
+    @media (max-width: 600px){
+        font-size: 16px;
+    }
+}
+
+.homeContent h4 {
+    @media (max-width: 560px){
+        font-size: 14px;
     }
 }
