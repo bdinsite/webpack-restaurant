@@ -148,7 +148,8 @@ textarea {
 .footerContent {
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     margin: 0 auto;
     align-items: top;
 }
@@ -162,11 +163,11 @@ textarea {
 .copyright {
     display: flex;
     align-items: center;
-    margin: 0 50px;
 }
 
 .address {
     display: flex;
+    max-width: 230px;
     flex-direction: column;
     justify-content: center;
 }
@@ -174,4 +175,48 @@ textarea {
 .social img {
     height: 50px;
     width: 50px;
+}
+
+
+.logo {
+    @media (max-width: 900px){
+        background-size: 40%;
+    }   
+}
+
+.logo {
+    @media (max-width: 800px){
+        background-size: 45%;
+    }   
+}
+
+.logo {
+    @media (max-width: 700px){
+        background-size: 50%;
+    }   
+}
+
+.logo {
+    @media (max-width: 600px){
+        background-size: 55%;
+    }   
+}
+
+.logo {
+    @media (max-width: 500px){
+        background-size: 60%;
+    }   
+}
+
+
+.address {
+    @media (max-width: 600px){
+        max-width: 170px;
+    }
+}
+
+.address {
+    @media (max-width: 550px){
+        max-width: 125px;
+    }
 }
